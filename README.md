@@ -1,15 +1,10 @@
-Sure! Here’s a clean, **single-README** you can drop in the root of your project (no folder tree included).
-It briefly explains the MERN chatbot app, setup instructions, and environment variables.
-
----
-
 ## ChatBot – MERN Stack (Vite + Tailwind v4)
 
 An AI-powered chatbot built with **MongoDB, Express, React (Vite)**, and **Node.js**, styled using Tailwind CSS v4.
 
 ---
 
-### 🚀 Features
+###  Features
 
 * User authentication (JWT + bcrypt)
 * Protected API routes
@@ -19,7 +14,7 @@ An AI-powered chatbot built with **MongoDB, Express, React (Vite)**, and **Node.
 
 ---
 
-### 🛠️ Prerequisites
+###  Prerequisites
 
 * **Node.js ≥18** and **npm or pnpm**
 * A running **MongoDB Atlas** cluster
@@ -27,7 +22,7 @@ An AI-powered chatbot built with **MongoDB, Express, React (Vite)**, and **Node.
 
 ---
 
-### ⚙️ Environment Variables
+###  Environment Variables
 
 Create a `.env` file in the backend folder with:
 
@@ -44,7 +39,7 @@ CLIENT_URL=http://localhost:5173/
 
 ---
 
-### 🧩 Installation
+###  Installation
 
 1. **Clone the repo**
 
@@ -71,7 +66,7 @@ CLIENT_URL=http://localhost:5173/
 
 ---
 
-### 🗂️ Scripts
+###  Scripts
 
 **Backend**
 
