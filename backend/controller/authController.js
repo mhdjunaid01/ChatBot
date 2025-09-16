@@ -116,7 +116,7 @@ const logout = (req, res) => {
   try {
     res.clearCookie("token", {
       httpOnly: true,
-      secure: false, // Set to true if using HTTPS
+      secure: process.env.NODE_ENV === "production", 
       sameSite: "lax",
     });
     res.status(200).json({ message: 'Token removed successfully' });
