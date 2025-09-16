@@ -35,8 +35,6 @@ NODE_ENV=development
 CLIENT_URL=http://localhost:5173/
 ```
 
-> ⚠️ Never commit real credentials (the example values above are placeholders).
-
 ---
 
 ###  Installation
