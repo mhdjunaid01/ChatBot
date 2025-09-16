@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 
 const axiosInstance = axios.create({
   // baseURL: "http://localhost:5000/", 
-  baseURL: "https://chatbot-kst9.onrender.com", 
+  baseURL: `${import.meta.env.VITE_API_URL}`, 
   withCredentials: true, 
 });
 
