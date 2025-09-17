@@ -17,8 +17,8 @@ const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
   const setAuthenticatedUser = (user) =>
     setAuth({ user: user, authenticated: true });
-  const setUnauthenticatedUser = () =>
-    setAuth({ user: null, authenticated: false });
+
+  const setUnauthenticatedUser = () => setAuth({ user: null, authenticated: false });
 
   const VerifyToken = async () => {
     try {
@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
     [registerData]
   );
 
-  const handleLogin = async (event) => {
+  const handleLogin = useCallback( async (event) => {
     event.preventDefault();
     setAuthLoading(true);
     try {
@@ -79,9 +79,9 @@ const AuthProvider = ({ children }) => {
     } finally {
       setAuthLoading(false);
     }
-  };
+  }, [signInData]);
 
-  const handleLogout = async () => {
+  const handleLogout = useCallback(async () => {
     try {
       setUnauthenticatedUser();
       const response = await axiosInstance.post("/auth/logout");
@@ -91,9 +91,9 @@ const AuthProvider = ({ children }) => {
       console.error("Error during logout:", error);
       toast.error("Logout failed. Please try again.");
     } finally {
-      navigate("/login");
+      navigate("/");
     }
-  };
+  } , [navigate]);
   const contextValue = {
     auth,
     loading,

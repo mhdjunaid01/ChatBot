@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import AuthPage from "./pages/Auth";
@@ -8,9 +8,8 @@ import { Toaster } from "./components/ui/sonner";
 const App = () => {
   const { auth, loading } = useContext(AuthContext);
 
-  useEffect(() => {
-  }, [auth]);
-  
+
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen">
