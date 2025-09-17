@@ -1,4 +1,4 @@
-## ChatBot – MERN Stack (Vite + Tailwind v4)
+## ChatBot – MERN Stack
 
 An AI-powered chatbot built with **MongoDB, Express, React (Vite)**, and **Node.js**, styled using Tailwind CSS v4.
 
